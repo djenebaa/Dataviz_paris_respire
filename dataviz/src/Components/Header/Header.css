@@ -1,0 +1,31 @@
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);    
+    flex-direction: row;
+    color: rgb(36, 106, 115);
+}
+.Titre {
+    
+    font-family: 'Inconsolata', monospace ;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    margin-left: 20px;
+}
+
+.Clock {
+    display: inline;
+    text-align: right;
+    /* position:relative ; */
+    /* margin-bottom: 200px; */
+    margin-top: 15px;
+
+}
+.logo{
+    width: 180px;
+    height: 120px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
