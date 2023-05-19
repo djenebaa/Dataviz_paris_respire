@@ -1,7 +1,8 @@
 // Importation des différentes librairies utilisées pour le rendu de la carte : React, Leaflet, Axios.
 
-import React, {useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MapContainer, Marker, Popup, Polygon, TileLayer, Tooltip } from "react-leaflet";
+import { Icon } from "leaflet";
 import "./Map.css";
 import axios from "axios";
 
@@ -11,9 +12,9 @@ const adaPosition = [48.87389115024882, 2.3588821526197985];
 
 // Définition de couleurs pour le dessin des polygones représentant les espaces verts du 75010.
 
-// const redOptions = { color: 'red' };
-// const fillBlueOptions = { fillColor: 'blue' };
-// const purpleOptions = { color: 'purple' };
+const redOptions = { color: 'red' };
+const fillBlueOptions = { fillColor: 'blue' };
+const purpleOptions = { color: 'purple' };
 
 // Fonction pour obtenir un code couleur HEX aléatoire.
 function getRandomColor() 
@@ -32,7 +33,7 @@ return color;
 let randomColorOptions = { color: getRandomColor() };
 
 // Couleur de test : code HEX fonctionne.
-// let testColor = {color: '#05D27C'}
+let testColor = {color: '#05D27C'}
 
 
 

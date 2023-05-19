@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Header.css';
 import Clock from '../Clock/Clock';
 
@@ -12,6 +12,10 @@ return (
   <div className='Titre'>
     <p> Paris<br/>
         Respire</p>
+
+        <img src="https://i.postimg.cc/8zBgBpYm/Logo.png" alt="Logo" className='logo' /> 
+
+
   </div>
 
   <div className = "Clock">
@@ -24,5 +28,3 @@ return (
  }
 
  export default Header
-
-

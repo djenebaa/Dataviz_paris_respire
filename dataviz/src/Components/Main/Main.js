@@ -1,4 +1,7 @@
+import React, { useEffect, useState } from "react";
+import {Routes, Route} from "react-router-dom";
 import "./Main.css";
+import axios from "axios";
 import Map from '../Map/Map';
 import Meteo from '../Meteo/Meteo';
 
@@ -33,8 +36,8 @@ function Main (){
   
   function setColours() {
     const now = new Date();
-    const hour = now.getHours();
-    // const hour = 20;
+    // const hour = now.getHours();
+    const hour = 20;
     // const min = now.getMinutes();
     // const sec = now.getSeconds();  
     let first = document.getElementById("main")
@@ -83,6 +86,15 @@ function Main (){
 
           
       </section>
+
+        {/* <h3 id="titreMap">Espaces verts 75010</h3> */}
+        {/* <section className="map">
+        
+          // <Map> </Map>
+
+        </section> */}
+        
+      {/* </div> */}
       
       </>
     )

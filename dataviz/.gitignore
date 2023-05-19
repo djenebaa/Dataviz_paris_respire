@@ -7,9 +7,15 @@
 
 # testing
 /coverage
+tests
+test-map
 
 # production
 /build
+
+#tests
+/tests
+test-map
 
 # misc
 .DS_Store

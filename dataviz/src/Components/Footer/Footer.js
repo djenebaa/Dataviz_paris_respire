@@ -5,7 +5,7 @@ function Footer(){
 
     return(
         <div className="footer-container">
-            <p className="credits">Made by Benjamin, Djeneba, Elodie et Malena </p>
+            <p className="credits">Made with love ❤️ by Benjamin, Djeneba, Elodie et Malena </p>
         </div>
     )
 
